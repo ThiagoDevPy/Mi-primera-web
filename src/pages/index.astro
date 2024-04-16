@@ -1,31 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
 ---
 
-<Layout title="Mi Primera Web">
-  <main>
-	<div class="sebas">
-		<h1 class="text-white animate-blurred-fade-in" style="font-size: 50px ; text-align: center;  ">Hola mundo</h1>
-
-	</div>
-	
+<Layout title="Mi Portafolio">
+  <main class="px-6">
+    <section class="w-full mx-auto lg:w-[740px] py-44 animate-bounce-fade-in">
+		<img
+		class="rounded-full w-12 h-12 mb-4"
+		src="/public/myphoto.jpeg"
+		alt="sebas photo"
+	  />
+      <h1 class="text-2xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4">
+        Hey, soy Sebastian <div class="flex justify-center items-center">
+          <Badge>Disponible para trabajar</Badge>
+        </div>
+      </h1>
+      <h2 class="text-2xl opacity-90 text-wrap">
+        +1 años de experiencia. Desarrollandor de Aplicaciones Web. Soy de
+        Paraguay. Especializado en crear Frontend.
+      </h2>
+    </section>
   </main>
 </Layout>
-
-
-<style>
-	body{
-		height: 100vh;
-		width: 100%;
-	}
-
-	main{
-		height: 100vh;
-		width: 100%;
-	}
-
-	.sebas{
-		padding-top: 30vh;
-	}
-	
-</style>
