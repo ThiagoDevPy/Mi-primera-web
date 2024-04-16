@@ -19,9 +19,7 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
   </head>
-  <body style="color: black;">
-	
-		<div class="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+  <body>
 	
     <Header />
     <slot />
@@ -30,12 +28,13 @@ const { title } = Astro.props;
 
 <style is:global>
   :root {
-    
+   
+  }
   html {
     font-family: "inconsolata variable", system-ui, sans-serif;
   }
   body {
-    background: #bcbcdd;
+    
     display: flex;
     flex-direction: column;
     min-height: 100vh;
